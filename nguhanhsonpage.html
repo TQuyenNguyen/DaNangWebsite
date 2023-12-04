@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DA NANG</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+    <script src="https://kit.fontawesome.com/e5c7157d28.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="image/logo.png"></a>
+            
+            <div class="nav-links" id="navLinks">
+                <i class="far fa-times-circle" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="tour.html">TOUR</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fas fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>NGŨ HÀNH SƠN</h1>
+    </section>
+
+    <!--location-->
+    <section class="location">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7895.191438272265!2d108.26114327838121!3d16.00229676823252!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31420dd4e14b2edb%3A0xbc6e1faf738be4c5!2zTsO6aSBOZ8WpIEjDoG5oIFPGoW4gxJDDoCBO4bq1bmc!5e0!3m2!1svi!2s!4v1642409504412!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+
+    <!-- about BaNaHills content -->
+
+    <section class="about-DN">
+        <div class="row">
+            <div class="about-col">
+                <h1>SUN WORLD BA NA HILLS</h1>
+                <p>Ngũ Hành Sơn là tuyệt tác về cảnh quan thiên nhiên mà tạo hóa ban tặng cho vùng đất Đà Nẵng. Có vẻ đẹp hài hòa của vùng sinh thái tự nhiên đan xen cùng với đời sống văn hóa tâm linh nên nơi đây càng ngày càng thu hút khách du lịch đến tham quan hàng năm.</p>
+                <a href="" class="hero-btn red-btn">Khám phá ngay</a>
+            </div>
+            <div class="about-col">
+                <img src="image/ngu-hanh-son.jpg">
+            </div>
+        </div>
+        
+    </section>
+
+<!--footer-->
+
+    <section class="footer">
+        <h4>About Me</h4>
+        <p>Là sinh viên của ngành CNTT, đang mày mò tìm hiểu những thứ mới mẻ</p>
+        <div class="icon">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-linkedin-in"></i>
+        </div>
+        <p>Make by QuyenNguyen</p>
+    </section>
+
+<!--js Bật tắt menu-->
+    <script>
+        var navLinks =  document.getElementById("navLinks");
+        function showMenu(){
+        navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+    
+</body>
+</html>

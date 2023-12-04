@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DA NANG</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+    <script src="https://kit.fontawesome.com/e5c7157d28.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="image/logo.png"></a>
+            
+            <div class="nav-links" id="navLinks">
+                <i class="far fa-times-circle" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="tour.html">TOUR</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fas fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>TOUR</h1>
+    </section>
+
+<!-- IDK -->
+
+    <section class="tour">
+        <h1>TOUR THAM QUAN</h1>
+        <p>Tour tham quan cho mọi du khách</p>
+        
+        <div class="row">
+            <div class="IDK-col">
+                <h3>Bình dân</h3>
+                <p>100$/day</p>
+            </div>
+            <div class="IDK-col">
+                <h3>Hạng sang</h3>
+                <p>500$/day</p>
+            </div>
+            <div class="IDK-col">
+                <h3>Super VIP</h3>
+                <p>1500$/day</p>
+            </div>
+        </div>
+    </section>
+
+
+<!--footer-->
+
+    <section class="footer">
+        <h4>About Me</h4>
+        <p>Là sinh viên của ngành CNTT, đang mày mò tìm hiểu những thứ mới mẻ</p>
+        <div class="icon">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-linkedin-in"></i>
+        </div>
+        <p>Make by QuyenNguyen</p>
+    </section>
+
+<!--js Bật tắt menu-->
+    <script>
+        var navLinks =  document.getElementById("navLinks");
+        function showMenu(){
+        navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+    
+</body>
+</html>
